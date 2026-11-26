@@ -8,6 +8,7 @@ Todos los comandos del curso en una sola página.
 |---|---|
 | `git config --global user.name "Tu Nombre"` | Define tu nombre |
 | `git config --global user.email "correo@ejemplo.com"` | Define tu correo |
+| `git config --global pull.rebase false` | Hace que `git pull` una los cambios con un merge |
 | `git config --global --list` | Muestra tu configuración |
 | `ssh-keygen -t ed25519 -C "correo@ejemplo.com"` | Crea tu llave SSH |
 | `ssh -T git@github.com` | Prueba la conexión con GitHub |

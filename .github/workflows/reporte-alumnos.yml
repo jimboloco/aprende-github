@@ -1,0 +1,36 @@
+name: Reporte de avance de alumnos
+
+# Se ejecuta a mano desde la pestaña Actions → "Reporte de avance de alumnos" → Run workflow.
+# Revisa solo a los alumnos de reto-final/alumnos.md y a los autores de Pull Requests abiertos.
+on:
+  workflow_dispatch:
+    inputs:
+      comentar:
+        description: "Dejar también el comentario del robot en cada Pull Request abierto"
+        type: boolean
+        default: false
+      usuarios:
+        description: "Usuarios extra separados por coma (opcional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write   # para agregar a los alumnos completos a la lista
+  issues: write
+  pull-requests: write
+
+jobs:
+  reporte:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Generar reporte
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          COMENTAR: ${{ inputs.comentar }}
+          USUARIOS: ${{ inputs.usuarios }}
+        run: python3 .github/scripts/verificar_reto.py todos

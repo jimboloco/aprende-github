@@ -56,7 +56,11 @@ Estos datos aparecen en cada commit que hagas. Cambia el nombre y el correo por 
 git config --global user.name "Tu Nombre"
 git config --global user.email "tucorreo@ejemplo.com"
 git config --global init.defaultBranch main
+git config --global pull.rebase false
 ```
+
+La última línea le dice a Git cómo unir cambios cuando haces `git pull`; sin ella,
+las versiones nuevas de Git marcan error en el módulo 07.
 
 Revisa que se guardaron:
 
@@ -107,6 +111,31 @@ bien verás un mensaje que empieza con `Hi tu-usuario!`.
 > *Personal Access Token*: en GitHub ve a **Settings → Developer settings →
 > Personal access tokens** y usa ese token en lugar de la contraseña.
 
+## 🖥️ Si usas una computadora compartida (laboratorio)
+
+En el laboratorio varias personas usan la misma compu. Si no tienes cuidado,
+vas a subir cambios **con la cuenta de otra persona** y el reto final no te va a contar.
+
+**Antes de empezar:**
+- En GitHub, revisa que el **avatar de arriba a la derecha sea el tuyo**. Si no, clic en el avatar → **Sign out** y entra con tu cuenta.
+- En Git Bash, revisa que el nombre y el correo sean los tuyos:
+  ```bash
+  git config --global user.name
+  git config --global user.email
+  ```
+  Si son de otra persona, vuelve a correr los comandos del paso 3 con tus datos.
+
+**Al terminar, siempre:**
+1. En GitHub: avatar → **Sign out**.
+2. En Git Bash, borra tu sesión guardada (cambia `TU-USUARIO`):
+   ```bash
+   git credential-manager github logout TU-USUARIO
+   ```
+
+> [!TIP]
+> Si el navegador te ofrece **traducir la página**, di que no. La traducción
+> cambia los nombres de los botones y desacomoda las tablas del robot.
+
 ## ✏️ Ejercicio
 
 Ejecuta estos tres comandos y verifica que los tres responden bien:
@@ -116,6 +145,12 @@ git --version
 git config --global user.name
 ssh -T git@github.com
 ```
+
+## 🔎 Evidencia para el reto final
+
+> [!IMPORTANT]
+> Usa en `user.email` **el mismo correo de tu cuenta de GitHub**. Así GitHub liga
+> tus commits a tu perfil, y eso es lo primero que revisa el reto final.
 
 ## ✅ Antes de continuar
 

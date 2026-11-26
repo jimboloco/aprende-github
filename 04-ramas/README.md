@@ -128,6 +128,12 @@ git commit -m "Resuelvo el conflicto del README"
    ```
 4. Resuelve el conflicto siguiendo los pasos de arriba.
 
+## 🔎 Evidencia para el reto final
+
+> [!IMPORTANT]
+> Haz el ejercicio del conflicto en tu `mi-primer-repo` y súbelo con `git push`.
+> El commit de la unión (`Merge branch 'rama-a'`) es la evidencia.
+
 ## ✅ Antes de continuar
 
 - [ ] Sé crear una rama y moverme entre ramas

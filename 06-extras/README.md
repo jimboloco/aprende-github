@@ -94,6 +94,11 @@ de presentación.
 3. Abre un Issue en tu propio repo con una mejora pendiente.
 4. Mejora tu README usando títulos, negritas y una lista.
 
+## 🔎 Evidencia para el reto final
+
+> [!IMPORTANT]
+> Tu `mi-primer-repo` debe tener un `.gitignore` con `*.log` y al menos un Issue.
+
 ## ✅ Antes de continuar
 
 - [ ] Mi repo tiene un `.gitignore`

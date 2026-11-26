@@ -102,12 +102,38 @@ desde ahí. El resto del flujo es igual.
 
 ## ✏️ Ejercicio
 
-Practica con un compañero:
+Practica en parejas. Cada quien usa **su propia cuenta** (revisa el avatar).
 
-1. Haz fork del repo `mi-primer-repo` de tu compañero.
-2. Clónalo, crea una rama y agrega una línea con un saludo en su README.
-3. Mándale un Pull Request.
-4. Tu compañero lo revisa y lo acepta. Luego cambian de papel.
+**Tú le mandas un PR a tu compañero:**
+
+1. Entra a `github.com/USUARIO-DE-TU-COMPAÑERO/mi-primer-repo`.
+2. Clic en **Add file → Create new file**. GitHub te ofrece hacer un fork: acéptalo.
+3. Nombre del archivo: `saludo-TU-USUARIO.txt`. Escribe un saludo adentro.
+4. **Commit changes** → **Propose changes** → **Create pull request**.
+5. Revisa que arriba del PR diga **into USUARIO-DE-TU-COMPAÑERO:main**. Si dice tu
+   propio usuario, se fue a tu repo: lee *"Problemas comunes"* abajo.
+
+**Tu compañero lo acepta** (con **su** cuenta): **Pull requests** → abre el PR →
+**Merge pull request** → **Confirm merge**. Luego cambian de papel.
+
+> [!TIP]
+> Se crea un **archivo nuevo** con tu usuario en el nombre, en lugar de editar
+> el README, para que los PRs de varios compañeros no choquen entre sí.
+
+## 🧯 Problemas comunes
+
+| Te pasa esto | Por qué | Solución |
+|---|---|---|
+| El PR se creó **en tu propio repo** | Ya tienes un repo llamado `mi-primer-repo`, así que tu fork se llamó `mi-primer-repo-1` y GitHub eligió mal el destino | Cierra ese PR. Entra a `github.com/USUARIO-DE-TU-COMPAÑERO/mi-primer-repo/compare` → **compare across forks** → **base repository:** el de tu compañero, **base:** `main`, **head repository:** tu fork, **compare:** tu rama → **Create pull request** |
+| **This branch has conflicts** | Tú y el dueño cambiaron la misma línea del mismo archivo | Clic en **Resolve conflicts**, deja el texto correcto, borra las líneas `<<<<<<<`, `=======` y `>>>>>>>`, **Mark as resolved** → **Commit merge**. Si no te deja, que lo haga quien mandó el PR desde su cuenta |
+| **Review required** y no se puede unir | El dueño protegió `main` pidiendo aprobaciones | El dueño (no quien mandó el PR) entra a **Files changed → Review changes → Approve**. Mejor aún: no marquen *Require approvals* (ve el [módulo 08](../08-permisos/)) |
+| *"Pull request authors can't approve their own pull requests"* | Estás con la cuenta de quien mandó el PR | Cierra sesión y entra con la cuenta del **dueño** del repo |
+
+## 🔎 Evidencia para el reto final
+
+> [!IMPORTANT]
+> En tu `mi-primer-repo` debe quedar **aceptado** al menos un Pull Request
+> hecho por un compañero.
 
 ## ✅ Antes de continuar
 

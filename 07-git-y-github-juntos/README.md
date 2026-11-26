@@ -126,6 +126,10 @@ git status
 | `behind 'origin/main' by 3 commits` | GitHub tiene commits que tú no | `git pull` |
 | `have diverged` | Los dos lados tienen commits distintos | `git pull` y resolver conflictos si aparecen |
 
+> [!TIP]
+> Si `git pull` responde `Need to specify how to reconcile divergent branches`,
+> ejecuta una vez `git config --global pull.rebase false` y repite el `git pull`.
+
 ## El error más común: push rechazado
 
 ```text
@@ -148,6 +152,12 @@ git push
 3. Ejecuta `git fetch` y `git status`. ¿Qué te dice?
 4. Intenta `git push` y observa el error.
 5. Arréglalo con `git pull` y vuelve a subir.
+
+## 🔎 Evidencia para el reto final
+
+> [!IMPORTANT]
+> Haz este ejercicio en tu `mi-primer-repo` y termina con `git push`. El commit
+> `Merge branch 'main' of ...` que crea el `git pull` es la evidencia.
 
 ## ✅ Antes de continuar
 

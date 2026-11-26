@@ -43,13 +43,44 @@ flowchart LR
 | <img src="img/08.svg" width="44" alt=""> | [**08 · Permisos**](08-permisos/) | Quién puede ver y modificar un repo: visibilidad, colaboradores, roles y protección de ramas | 30 min |
 | 🏆 | [**Reto final**](reto-final/) | Agrega tu nombre a este repo con un Pull Request | 20 min |
 
+## 🤖 Antes de empezar: un robot revisa tu trabajo
+
+Este curso **no se aprueba solo con el último paso**. Cuando mandas tu Pull Request
+del [reto final](reto-final/), un robot revisa tu repositorio de práctica y comprueba
+que hiciste los ejercicios de **cada módulo**. Te deja un comentario con ✅ lo que
+cumpliste y ❌ lo que te falta.
+
+Para que no te marque error, ten claros **tus dos repositorios**:
+
+```mermaid
+flowchart LR
+    subgraph TU["Tu cuenta de GitHub"]
+        P["📦 mi-primer-repo<br/>Aquí haces TODOS los ejercicios<br/>(módulos 03 al 08)"]
+        F["🍴 Fork de aprende-github<br/>Aquí SOLO agregas tu fila<br/>(reto final)"]
+    end
+    F -- "Pull Request<br/>con tu fila" --> C["🏫 git-master-utn/aprende-github"]
+    C -. "🤖 el robot revisa" .-> P
+```
+
+> [!IMPORTANT]
+> **Las 3 reglas para que el robot te apruebe:**
+> 1. Crea en **tu** cuenta un repo **público** llamado **exactamente** `mi-primer-repo` y haz ahí los ejercicios.
+> 2. **No hagas los ejercicios dentro del fork del curso.** El fork es solo para agregar tu fila.
+> 3. Al final de cada módulo hay una caja **"🔎 Evidencia para el reto final"**: cúmplela antes de seguir.
+
+> [!TIP]
+> ¿El robot te marcó algo en rojo? **No es que esté descompuesto:** te está diciendo
+> exactamente qué te falta. Lee la tabla
+> [Si el robot marca algo en rojo](reto-final/#si-el-robot-marca-algo-en-rojo),
+> arréglalo y pide otra revisión.
+
 ## 🚀 ¿Cómo usar este repo?
 
 1. Sigue los módulos **en orden**; cada uno usa lo del anterior.
 2. **Escribe los comandos tú mismo**. Copiar y pegar sirve, pero teclear enseña más.
 3. Haz el **ejercicio** al final de cada módulo antes de pasar al siguiente.
 4. Ten a la mano el [**cheatsheet**](cheatsheet.md) con todos los comandos en una página.
-5. Termina con el [**reto final**](reto-final/) para dejar tu nombre aquí.
+5. Termina con el [**reto final**](reto-final/): el robot revisa que hayas hecho todo.
 
 > [!TIP]
 > Si algo sale mal, no pasa nada. Git casi nunca pierde tu trabajo y equivocarse

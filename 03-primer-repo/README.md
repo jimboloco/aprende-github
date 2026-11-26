@@ -84,7 +84,7 @@ git log --oneline
 ## Paso 7 · Crea el repo en GitHub
 
 1. En GitHub, clic en el **+** de arriba a la derecha → **New repository**.
-2. Nombre: `mi-primer-repo`.
+2. Nombre: **exactamente** `mi-primer-repo` (con ese nombre lo revisa el reto final).
 3. Déjalo **Public** y **no marques** ninguna casilla (ni README, ni .gitignore, ni licencia).
 4. Clic en **Create repository**.
 
@@ -114,6 +114,12 @@ git push
 2. Crea un archivo nuevo llamado `notas.txt` con cualquier texto.
 3. Haz **dos commits separados**, uno por cada cambio, con mensajes claros.
 4. Súbelos con `git push` y comprueba en GitHub que aparecen los 3 commits.
+
+## 🔎 Evidencia para el reto final
+
+> [!IMPORTANT]
+> Tu `mi-primer-repo` debe ser **público**, tener `README.md` y al menos 3 commits.
+> Vas a seguir usando este mismo repo en todos los módulos: no lo borres.
 
 ## ✅ Antes de continuar
 
